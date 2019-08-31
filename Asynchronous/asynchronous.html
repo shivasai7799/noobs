@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <title>Asynchronous JavaScript</title> -->
+</head>
+
+<body>
+    <!-- <h1>Asynchronous JavaScript</h1> -->
+
+    <script>
+        // const second = () => {
+        //     setTimeout(() => {
+        //         console.log(`Hey Shiva`);
+        //     },3000);
+        // }
+
+        // const first = () => {
+        //     console.log(`Hey There`);
+        //     second();
+        //     console.log('The End');
+        // }
+        // first();
+
+        // function Recipes() {
+        //     const shiva = [233, 777, 999];
+        //     setTimeout(() => {
+        //         console.log(shiva);
+
+
+        //         setTimeout(id => {
+        //             const recipe = {
+        //                 title: 'Tamoto pasta',
+        //                 publish: 'shiva'
+        //             }
+        //             console.log(`${id} : ${recipe.title} : ${recipe.publish}`);
+
+
+        //         setTimeout(publish => {
+        //             const recipe2 = {
+        //                 title: 'Italian pizza',
+        //                 publish: 'shiva'
+        //             }
+        //             console.log(recipe);
+        //         }, 3000, recipe.publish);
+
+        //     }, 2000,shiva[2]);
+
+        //     }, 1500);
+        // }
+        // Recipes();
+
+        // getIDs = new Promise((resolve, reject) => {
+        //     setTimeout(() => {
+        //         resolve([233, 777, 999]);
+        //     }, 1500);
+        // });
+
+        // getRecipe = recID => {
+        //     return new Promise((resolve, reject) => {
+        //         setTimeout(ID => {
+        //             const recipe = {
+        //                 title: 'Tamoto pasta',
+        //                 publish: 'shiva'
+        //             }
+        //             resolve(`${ID} : ${recipe.title} : ${recipe.publish}`);
+        //         }, 1500, recID);
+                
+        //         getRelated = publish => {
+        //             return new Promise((resolve, reject) => {
+        //                 setTimeout(pub => {
+        //                     const recipe2 = {
+        //                         title: 'italian pizza',
+        //                         publish: 'shiva'
+        //                     }
+        //                     resolve(`${pub} : ${recipe2.title} : ${recipe2.publish}`)
+        //                 }, 2500, publish);
+        //             });
+        //         };
+        //     });
+        // };
+        
+        // getIDs.
+        //     then(ids => {
+        //         console.log(ids);
+        //         return getRecipe(ids[2]);
+        //     })
+        //     .then(recipe => {
+        //         console.log(recipe)
+        //         return getRelated('jonas');
+        //     })
+        //     .then(recipe => {
+        //         console.log(recipe)
+        //     })
+        //     .catch(error => {
+        //         console.log(error)
+        //     })
+
+        // async function getRecipesAW() { 
+        //     const ids = await getIDs;
+        //     console.log(ids);
+        //     const recipe = await getRecipe(ids[2]);
+        //     console.log(recipe);
+        //     const related = await getRelated('Arnold');
+        //     console.log(related);
+        //     return recipe;
+        // }
+        // getRecipesAW().then(result => {
+        //     console.log(`${result} is always the best recipe`);
+        // });
+
+        // function getWeatherAW(woeid){
+        // fetch('https://crossorigin.me/https://www.metaweather.com/api/location/${woeid}/')
+        // .then(result => {
+        //  console.log(result);
+        //  return result.json();
+        // })
+        // .then(data => {
+        // //  console.log(data);
+        // const today = data.consolidate_weather[0];
+        // console.log(`The Temperature in ${data.title} stays between ${today.max_temp} and ${today.min_temp}`)
+
+        // })
+        // .catch(error => {
+        //     alert(error)
+        //     });
+        // }
+
+        // getWeatherAW('2487956');
+        // getWeatherAW('44418');
+
+
+
+        async function getWeatherAW (woeid) { 
+            try{ 
+            const result = await fetch('https://crossorigin.me/https://www.metaweather.com/api/location/${woeid}/');
+            console.log(result);
+            const data = await result.json();
+            console.log(data);
+            const today = data.consolidate_weather[0];
+            console.log(`The Temperature in ${data.title} stays between ${today.max_temp} and ${today.min_temp}`);
+            const tommorow = data.consolidate_weather[1];
+            console.log(`The Temperature in ${data.title} stays between ${tommorow.max_temp} and ${tommorow.min_temp}`);
+            }
+            catch (error) { 
+                alert(error)
+            }
+            
+        };
+
+        getWeatherAW('2487956');
+        let dataLondon;
+        getWeatherAW('44418').then(data => { dataLondon = data
+            console.log(dataLondon);
+        });
+
+
+</script>
+</body>
+
+</html>
