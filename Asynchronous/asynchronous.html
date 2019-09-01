@@ -113,48 +113,49 @@
         // });
 
         // function getWeatherAW(woeid){
-        // fetch('https://crossorigin.me/https://www.metaweather.com/api/location/${woeid}/')
+        // fetch(`https://cors-anywhere.herokuapp.com/https://www.metaweather.com/api/location/${woeid}/`)
         // .then(result => {
-        //  console.log(result);
         //  return result.json();
+        //  console.log(result);
         // })
         // .then(data => {
-        // //  console.log(data);
-        // const today = data.consolidate_weather[0];
-        // console.log(`The Temperature in ${data.title} stays between ${today.max_temp} and ${today.min_temp}`)
+        // console.log(data);
+        // const today = data.consolidated_weather[0];
+        // console.log(`The Temperature for  ${data.title} stays between ${today.max_temp} and ${today.min_temp}`);
+        // const tommorow = data.consolidated_weather[1];
+        // console.log(`The Temperature in ${data.title} stays between ${tommorow.max_temp} and ${tommorow.min_temp}`);
 
         // })
         // .catch(error => {
-        //     alert(error)
+        //     console.log(error)
         //     });
         // }
 
-        // getWeatherAW('2487956');
-        // getWeatherAW('44418');
+        // getWeatherAW(2487956);
+        // getWeatherAW(44418);
 
 
 
-        async function getWeatherAW (woeid) { 
-            try{ 
-            const result = await fetch('https://crossorigin.me/https://www.metaweather.com/api/location/${woeid}/');
-            console.log(result);
+        async function getWeatherAW(woeid) { 
+            try {
+                const result = await fetch(`https://cors-anywhere.herokuapp.com/https://www.metaweather.com/api/location/${woeid}/`);
             const data = await result.json();
-            console.log(data);
-            const today = data.consolidate_weather[0];
+            // console.log(data);
+            const today = data.consolidated_weather[0];
             console.log(`The Temperature in ${data.title} stays between ${today.max_temp} and ${today.min_temp}`);
-            const tommorow = data.consolidate_weather[1];
+            const tommorow = data.consolidated_weather[1];
             console.log(`The Temperature in ${data.title} stays between ${tommorow.max_temp} and ${tommorow.min_temp}`);
-            }
-            catch (error) { 
-                alert(error)
-            }
-            
-        };
+            return data;
+          } catch(error){
+              console.log(error)
+          }
 
-        getWeatherAW('2487956');
+          } 
+        getWeatherAW(2487956);
         let dataLondon;
-        getWeatherAW('44418').then(data => { dataLondon = data
-            console.log(dataLondon);
+        getWeatherAW(44418)
+        .then(data => { dataLondon = data
+        console.log(dataLondon);
         });
 
 
