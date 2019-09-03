@@ -1,5 +1,5 @@
 // Global app controller
 
 import number from './test';
-
-console.log(`i imported ${number} from other module`);
+const shiva = 77;
+console.log(`i imported ${number} from other module test.js! Variable x is ${shiva}`);
