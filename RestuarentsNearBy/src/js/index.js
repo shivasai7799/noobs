@@ -173,7 +173,7 @@ const newLike = state.likes.addLike(
 
  } else {
    //Remove like from state
-   states.likes.deleteLike(currentId);
+   state.likes.deleteLike(currentId);
    //Toggle the like button 
    likesView.toggleLikeBtn(false);
    //Remove Like from the list 
@@ -183,6 +183,21 @@ const newLike = state.likes.addLike(
  }
  likesView.toggleLikeMenu(state.likes.getNumLikes());
  };
+
+ //restored liked reciepes on page reload
+
+ window.addEventListener('load', () => {
+     state.likes = new Likes();
+
+     //Restore likes
+     state.likes.readStorage();
+
+    //Toggle like menu button 
+     likesView.toggleLikeMenu(state.likes.getNumLikes());
+
+     //Render the existing likes 
+     state.likes.likes.forEach(like => likesView.renderLikes(like));
+ })
 
 
 
@@ -211,9 +226,5 @@ elements.recipe.addEventListener('click', e => {
     
 });
 
-
-
-
-window.l = new List();
 
 
