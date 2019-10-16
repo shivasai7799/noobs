@@ -9,8 +9,10 @@ console.log(`my value for add : ${searchView.add(searchView.ID , 3)} and multipl
 
 import Search from './models/Search';
 import Recipe from './models/Recipe';
+import List from './models/List';
 import * as searchView from './views/searchView';
 import * as recipeView from './views/recipeView';
+import * as listView from './views/listView';
 import { elements,renderLoader,clearLoader } from './views/base';
 
 /**- Global state of application
@@ -104,6 +106,38 @@ const controlSearch = async () => {
 
 ['hashchange', 'load'].forEach(e => window.addEventListener(e,controlRecipe));
 
+/** List controller */
+
+const controlList = () => {
+    //create a new list if there in none yet 
+    if(!state.list) state.list = new List ();
+
+    //Add each ingredient to the list and UI
+    state.recipe.ingredients.forEach(el => {
+        const item = state.list.addItem(el.count,el.unit,el.ingredients);
+        listView.renderItem(item);
+    });
+}
+
+//handle delete and update list item events
+ elements.shopping.addEventListener('click', e => {
+    const id = e.target.closest('.shopping__item').dataset.itemid;
+
+    //Handle the delete button 
+   if(e.target.matches('.shopping__delete, .shopping__delete *')){
+    //delete from state
+    state.list.deleteItem(id);
+    //delete from UI
+    listView.deleteItem(id);
+   } else if(e.target.matches('.shopping__count-value')){
+       const val = parseFloat(e.target.value,10);
+       state.list.updateCount(id,val);
+   }
+    
+
+
+});
+
 
 //Handling the reciepe button clicks 
 
@@ -115,12 +149,16 @@ elements.recipe.addEventListener('click', e => {
         recipeView.updateServingsIngredients(state.recipe);
     }
     
-    }else if (e.target.matches('.btn-increase, btn-increase  *')){
+    } else if (e.target.matches('.btn-increase, btn-increase  *')){
        //Increase button is clicked
        state.recipe.updateServings('inc');
        recipeView.updateServingsIngredients(state.recipe);
+    } else if (e.target.matches('.recipe__btn--add , .recipe__btn--add *')){
+        controlList();
+
     }
-    console.log(state.recipe);
-})
+});
+
+window.l = new List();
 
 
