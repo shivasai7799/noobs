@@ -89,61 +89,9 @@ function reportStreets(s){
 	
 	//ClassifySizes 
 	s.forEach(el => el.classifyStreet());
-	 
 	
 	
 }
 
 reportParks(allParks);
 reportStreets(allStreets);
-
-
-//class Town {
-//	constructor(name,yearOfBirth){
-//		this.name = name;
-//		this.yearOfBirth = yearOfBirth ;
-//	}
-//	
-//}
-//
-//
-//class Parks extends Town {
-//	constructor(name,yearOfBirth,place){
-//		super(name,yearOfBirth);
-//		this.palce = place;
-//	}
-//	
-//	calcAge(){
-//		const age = new Date().getFullYear() - this.yearOfBirth;
-//		console.log(`age of the person is ${age}`);
-//	}
-//}
-//
-//function calcAge(arr){
-//    const sum = arr.reduce((prev,curr,index) => prev + curr,0)
-//	return [sum , sum/arr.length];
-//}
-//
-//const allParks = [new Parks('shiva', 1991, 'medak'), new Parks('srinivas', 1994, 'kansas'), new Parks('kumar', 1995, 'California')];
-//
-//function reportParks(p){
-// console.log(`----------Report log---------`);
-// 
-// const ages = allParks.forEach(p => {
-//	 p.calcAge()
-// });
-//	
-//const ages1 = p.map(el => new Date().getFullYear() - el.buildYear);
-//console.log(new Date());
-//const [totalAge, average] = calcAge(ages1);
-//console.log(`Our ${p.length} parks have an average of ${average} years`);
-//
-//};
-//
-//
-//
-//reportParks(allParks);
-
-
-
-

@@ -1,0 +1,9 @@
+cp ios-planning-0.0.1.war /ngs/app/aciosp/rodeo/wildfly-15/wildfly-15.0.0.Final/standalone/deployments
+
+cp opf-ll-named-objects.yml /ngs/app/aciosp/rodeo/opfConfigs/
+
+cp excelValidationconfig.json /ngs/app/aciosp/rodeo/opfConfigs/
+
+cp rangeconfig.json /ngs/app/aciosp/rodeo/opfConfigs/
+
+

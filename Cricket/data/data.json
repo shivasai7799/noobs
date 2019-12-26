@@ -1,0 +1,62 @@
+[
+    {
+        "id": "0",
+        "playerName": "Sourav Ganguly",
+        "image": "ganguly.png",
+        "dateOfBirth": "July 8, 1972",
+        "age": "47 Years",
+        "testDebut": "20 June 1996 v England",
+        "lastTest": "6 November 2008 v Australia",
+        "odiDebut": "11 January 1992 v West Indies",
+        "lastOdi": "15 November 2007 v Pakistan.",
+        "description": "Sourav Chandidas Ganguly affectionately known as Dada is an Indian cricket commentator and former cricketer and captain of the Indian national team. He is the President of the Board of Control for Cricket in India and President of the Editorial Board with Wisden India.[2] During his playing career, Ganguly established himself as one of the world's leading batsmen and also one of the greatest captains of the Indian national cricket team.While batting, he was especially prolific through the off side, earning himself the nickname God of the Off Side for his elegant stroke play square of the wicket and through the covers."
+    },
+    {
+        "id": "1",
+        "playerName": "Sachin Tendulkar",
+        "image": "sachin.png",
+        "dateOfBirth": "April 24, 1973",
+        "age": "46 Years",
+        "testDebut": "15 November 1989 v Pakistan",
+        "lastTest": "14 November 2013 v West Indies",
+        "odiDebut": "18 December 1989 v Pakistan",
+        "lastOdi": "18 March 2012 v Pakistan",
+        "description": "Sachin Ramesh Tendulkar is an Indian former international cricketer and a former captain of the Indian national team. He is widely regarded as one of the greatest batsmen in the history of cricket.He is the highest run scorer of all time in International cricket. Tendulkar took up cricket at the age of eleven, made his Test debut on 15 November 1989 against Pakistan in Karachi at the age of sixteen, and went on to represent Mumbai domestically and India internationally for close to twenty-four years. He is the only player to have scored one hundred international centuries, the first batsman to score a double century in an ODI, the holder of the record for the most runs in both Test and ODI, and the only player to complete more than 30,000 runs in international cricket."
+    },
+    {
+        "id": "2",
+        "playerName": "Mahendra singh Dhoni",
+        "image": "dhoni.png",
+        "dateOfBirth": "7 July 1981",
+        "age": "38 Years",
+        "testDebut": "2 December 2005 v Sri Lanka",
+        "lastTest": "26 December 2014 v Australia",
+        "odiDebut": "23 December 2004 v Bangladesh",
+        "lastOdi": "9 July 2019 v New Zealand",
+        "description": "Mahendra Singh Dhoni commonly known as MS Dhoni, is an Indian international cricketer who captained the Indian national team in limited-overs formats from 2007 to 2016 and in Test cricket from 2008 to 2014. Under his captaincy, India won the 2007 ICC World Twenty20, the 2010 and 2016 Asia Cups, the 2011 ICC Cricket World Cup and the 2013 ICC Champions Trophy. A right-handed middle-order batsman and wicket-keeper, Dhoni is one of the highest run scorers in One Day Internationals (ODIs) with more than 10,000 runs scored and is considered an effective finisher in limited-overs formats.He is also regarded by some as one of the best wicket-keepers and captain in modern limited-overs international cricket."
+    },
+    {
+        "id": "3",
+        "playerName": "Virat Kohli",
+        "image": "nz_virat_150830.png",
+        "dateOfBirth": "5 November 1988",
+        "age": "30 Years",
+        "testDebut": "20 June 2011 v West Indies",
+        "lastTest": "19 October 2019 v South Africa",
+        "odiDebut": "18 August 2008 v Sri Lanka",
+        "lastOdi": "14 August 2019 v West Indies",
+        "description": "Virat Kohli is an Indian cricketer who currently captains the India national team. A right-handed top-order batsman, Kohli is regarded as one of the best batsmen in the world.He plays for Royal Challengers Bangalore in the Indian Premier League (IPL), and has been the team's captain since 2013. Since October 2017, he has been the top-ranked ODI batsman in the world and is currently 2nd in Test rankings.Among Indian batsmen, Kohli has the best ever Test rating (937 points), ODI rating (911 points) and T20I rating (897 points).Kohli captained India Under-19s to victory at the 2008 Under-19 World Cup in Malaysia, and a few months later, made his ODI debut for India against Sri Lanka at the age of 19."
+    },
+    {
+        "id": "4",
+        "playerName": "Rohit Sharma",
+        "image": "rohit.png",
+        "dateOfBirth": "30 April 1987",
+        "age": "32 Years",
+        "testDebut": "6 November 2013 v West Indies",
+        "lastTest": "19 October 2019 v South Africa",
+        "odiDebut": "23 June 2007 v Ireland",
+        "lastOdi": "14 August 2019 v West Indies",
+        "description": "Rohit Gurunath Sharma is an Indian international cricketer who plays for Mumbai in domestic cricket and captains Mumbai Indians in the Indian Premier League as a right-handed batsman and an occasional right-arm off break bowler. He is the vice-captain of the Indian national team in limited-overs formats.Outside cricket, Sharma is an active supporter of animal welfare campaigns. He is the official Rhino Ambassador for WWF-India and is a member of People for the Ethical Treatment of Animals. He has worked with PETA in its campaign to raise awareness of the plight of homeless cats and dogs in India."
+    }
+]
