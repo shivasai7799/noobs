@@ -1,27 +1,35 @@
-/* --------------------------------- */
-/* Basic Setup */
-/* --------------------------------- */
+/*
+Orange color: #e67e22
+
+*/
+
+
+/* ----------------------------------------------- */
+/* BASIC SETUP */
+/* ----------------------------------------------- */
 
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-html {
+html,
+body {
     background-color: #fff;
     color: #555;
     font-family: 'Lato', 'Arial', sans-serif;
     font-weight: 300;
     font-size: 20px;
     text-rendering: optimizeLegibility;
+    overflow-x: hidden;
 }
 
 .clearfix {
-    zoom: 1
+    zoom: 1;
 }
 
-.clearfix :after {
+.clearfix:after {
     content: '.';
     clear: both;
     display: block;
@@ -29,15 +37,14 @@ html {
     visibility: hidden;
 }
 
+/* ----------------------------------------------- */
+/* REUSABLE COMPONENTS */
+/* ----------------------------------------------- */
 
-/* --------------------------------- */
-/* Reusable Components */
-/* --------------------------------- */
 
 .row {
     max-width: 1140px;
     margin: 0 auto;
-    /* center*/
 }
 
 section {
@@ -48,30 +55,27 @@ section {
     padding: 1%;
 }
 
-/* ----- Headings ----- */
-
+/* ----- HEADINGS ----- */
 h1,
 h2,
 h3 {
     font-weight: 300;
     text-transform: uppercase;
-    margin-bottom: 30px;
-
 }
 
 h1 {
     margin-top: 0;
     margin-bottom: 20px;
-    font-size: 240%;
     color: #fff;
+    font-size: 240%;
     word-spacing: 4px;
     letter-spacing: 1px;
 }
 
 h2 {
     font-size: 180%;
-    text-align: center;
     word-spacing: 2px;
+    text-align: center;
     margin-bottom: 30px;
     letter-spacing: 1px;
 }
@@ -91,9 +95,7 @@ h2:after {
     margin-top: 30px;
 }
 
-
-/* ----- Paragraphs ----- */
-
+/* ----- PARAGRAPHS ----- */
 .long-copy {
     line-height: 145%;
     width: 70%;
@@ -106,15 +108,13 @@ h2:after {
 }
 
 
-/* ----- Icons ----- */
-
+/* ----- ICONS ----- */
 .icon-big {
     font-size: 350%;
     display: block;
     color: #e67e22;
     margin-bottom: 10px;
 }
-
 
 .icon-small {
     display: inline-block;
@@ -124,14 +124,13 @@ h2:after {
     font-size: 120%;
     margin-right: 10px;
 
-    /* secrets to align the text and icons*/
+    /*secrets to align text and icons*/
     line-height: 120%;
     vertical-align: middle;
     margin-top: -5px;
-
 }
 
-/* ----- links ----- */
+/* ----- LINKS ----- */
 
 a:link,
 a:visited {
@@ -139,6 +138,7 @@ a:visited {
     text-decoration: none;
     padding-bottom: 1px;
     border-bottom: 1px solid #e67e22;
+    -webkit-transition: border-bottom 0.2s, color 0.2s;
     transition: border-bottom 0.2s, color 0.2s;
 }
 
@@ -148,8 +148,7 @@ a:active {
     border-bottom: 1px solid transparent;
 }
 
-/* ----- Buttons ----- */
-
+/* ----- BUTTONS ----- */
 .btn:link,
 .btn:visited,
 input[type=submit] {
@@ -158,6 +157,7 @@ input[type=submit] {
     font-weight: 300;
     text-decoration: none;
     border-radius: 200px;
+    -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
     transition: background-color 0.2s, border 0.2s, color 0.2s;
 }
 
@@ -176,40 +176,32 @@ input[type=submit] {
     color: #e67e22;
 }
 
-.btn-full:active,
-.btn-full:hover,
+.btn:hover,
+.btn:active,
 input[type=submit]:hover,
 input[type=submit]:active {
     background-color: #cf6d17;
-    border: 1px solid #e67e22;
-    color: #fff;
-
 }
 
-.btn-ghost:active,
-.btn-ghost:hover {
+.btn-full:hover,
+.btn-full:active {
+    border: 1px solid #cf6d17;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
     border: 1px solid #cf6d17;
     color: #fff;
-    background-color: #cf6d17;
 }
 
 
-.btn:hover,
-.btn:active,
-input[type=submit] {
-    display: inline-block;
-    padding: 10px 30px;
-    font-weight: 300;
-    text-decoration: none;
-    border-radius: 200px;
-}
-
-/* --------------------------------- */
-/* Header component */
-/* --------------------------------- */
+/* ----------------------------------------------- */
+/* HEADER */
+/* ----------------------------------------------- */
 
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg);
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero-min.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero-min.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -221,16 +213,27 @@ header {
     width: 1140px;
     top: 50%;
     left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
 
 .logo {
-    float: left;
     height: 100px;
     width: auto;
+    float: left;
     margin-top: 20px;
 }
 
+.logo-black {
+    display: none;
+    height: 50px;
+    width: auto;
+    float: left;
+    margin: 5px 0;
+}
+
+/* Main navi */
 .main-nav {
     float: right;
     list-style: none;
@@ -239,38 +242,82 @@ header {
 
 .main-nav li {
     display: inline-block;
-    /* side by side */
     margin-left: 40px;
 }
 
 .main-nav li a:link,
 .main-nav li a:visited {
-    padding: 6px;
+    padding: 8px 0;
     color: #fff;
     text-decoration: none;
-    margin-top: 55px;
     text-transform: uppercase;
     font-size: 90%;
     border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.2s;
+    transition: border-bottom 0.2s;
 }
 
 .main-nav li a:hover,
 .main-nav li a:active {
-    border-bottom: 2px solid #cf6d17;
-    transition: border-bottom 0.2s;
+    border-bottom: 2px solid #e67e22;
 }
 
-/* --------------------------------- */
-/* Features */
-/* --------------------------------- */
+
+/* Mobile navi */
+.mobile-nav-icon {
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-nav-icon i {
+    font-size: 200%;
+    color: #fff;
+}
+
+
+/* Sticky navi */
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 2px 2px #efefef;
+    z-index: 9999;
+}
+
+.sticky .main-nav {
+    margin-top: 18px;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+    padding: 16px 0;
+    color: #555;
+}
+
+.sticky .logo {
+    display: none;
+}
+
+.sticky .logo-black {
+    display: block;
+}
+
+/* ----------------------------------------------- */
+/* FEATURES */
+/* ----------------------------------------------- */
 
 .section-features .long-copy {
     margin-bottom: 30px;
 }
 
-/* --------------------------------- */
-/* Meal component */
-/* --------------------------------- */
+
+/* ----------------------------------------------- */
+/* MEALS */
+/* ----------------------------------------------- */
 
 .section-meals {
     padding: 0;
@@ -282,7 +329,7 @@ header {
 }
 
 .meals-showcase li {
-    display: none;
+    display: block;
     float: left;
     width: 25%;
 }
@@ -298,32 +345,42 @@ header {
     opacity: 0.7;
     width: 100%;
     height: auto;
+    -webkit-transform: scale(1.15);
+    -ms-transform: scale(1.15);
     transform: scale(1.15);
+    -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
     transition: transform 0.5s, opacity 0.5s;
 }
 
-.meal-photo img : hover {
+.meal-photo img:hover {
     opacity: 1;
+    -webkit-transform: scale(1.03);
+    -ms-transform: scale(1.03);
     transform: scale(1.03);
 }
 
 
-/* --------------------------------- */
-/* How it works */
-/* --------------------------------- */
+
+/* ----------------------------------------------- */
+/* HOW IT WORKS SECTION */
+/* ----------------------------------------------- */
 
 .section-steps {
     background-color: #f4f4f4;
 }
 
-.steps-box:first-child {
-    text-align: right;
-    padding-right: 3%;
+.steps-box {
     margin-top: 30px;
 }
 
 
+.steps-box:first-child {
+    text-align: right;
+    padding-right: 3%;
+}
+
 .steps-box:last-child {
+    text-align: left;
     padding-left: 3%;
     margin-top: 70px;
 }
@@ -342,16 +399,16 @@ header {
 
 .works-step div {
     color: #e67e22;
-    border: 2px solid #e67e22;
-    display: inline-block;
-    border-radius: 50%;
-    height: 55px;
-    width: 55px;
-    text-align: center;
-    padding: 5px;
-    float: left;
     font-size: 150%;
+    height: 54px;
+    width: 54px;
+    border: 2px solid #e67e22;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
     margin-right: 25px;
+    float: left;
+    padding: 5px;
 }
 
 .btn-app:link,
@@ -366,9 +423,9 @@ header {
 }
 
 
-/* --------------------------------- */
-/* How it works */
-/* --------------------------------- */
+/* ----------------------------------------------- */
+/* CITIES */
+/* ----------------------------------------------- */
 
 .box img {
     width: 100%;
@@ -376,18 +433,18 @@ header {
     margin-bottom: 15px;
 }
 
-
 .city-feature {
     margin-bottom: 5px;
-
 }
 
-/* --------------------------------- */
-/* Testimonials */
-/* --------------------------------- */
+
+/* ----------------------------------------------- */
+/* TESTIMONIALS */
+/* ----------------------------------------------- */
 
 .section-testimonials {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/back-customers.jpg);
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/back-customers-min.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/back-customers-min.jpg);
     background-size: cover;
     color: #fff;
     background-attachment: fixed;
@@ -410,7 +467,6 @@ blockquote:before {
     left: -5px;
 }
 
-
 cite {
     font-size: 90%;
     margin-top: 25px;
@@ -425,9 +481,10 @@ cite img {
 }
 
 
-/* --------------------------------- */
-/* Signup */
-/* --------------------------------- */
+/* ----------------------------------------------- */
+/* SIGN UP */
+/* ----------------------------------------------- */
+
 .section-plans {
     background-color: #f4f4f4;
 }
@@ -451,11 +508,11 @@ cite img {
     border-top-right-radius: 5px;
 }
 
-
 .plan-box div:last-child {
     text-align: center;
     border: 0;
 }
+
 
 .plan-price {
     font-size: 300%;
@@ -467,12 +524,10 @@ cite img {
 .plan-price span {
     font-size: 30%;
     font-weight: 300;
-
 }
 
 .plan-price-meal {
     font-size: 80%;
-
 }
 
 .plan-box ul {
@@ -483,9 +538,10 @@ cite img {
     padding: 5px 0;
 }
 
-/* --------------------------------- */
-/* Form */
-/* --------------------------------- */
+
+/* ----------------------------------------------- */
+/* FORM */
+/* ----------------------------------------------- */
 
 .contact-form {
     width: 60%;
@@ -502,10 +558,8 @@ textarea {
     border: 1px solid #ccc;
 }
 
-
 textarea {
     height: 100px;
-
 }
 
 input[type=checkbox] {
@@ -516,9 +570,10 @@ input[type=checkbox] {
     outline: none;
 }
 
-/* --------------------------------- */
-/* footer */
-/* --------------------------------- */
+
+/* ----------------------------------------------- */
+/* FOOTER */
+/* ----------------------------------------------- */
 
 footer {
     background-color: #333;
@@ -554,11 +609,12 @@ footer {
     text-decoration: none;
     border: 0;
     color: #888;
+    -webkit-transition: color 0.2s;
     transition: color 0.2s;
 }
 
-.footer-nav li:hover,
-.footer-nav li:active {
+.footer-nav li a:hover,
+.footer-nav li a:active {
     color: #ddd;
 }
 
@@ -571,10 +627,9 @@ footer {
 .ion-social-twitter,
 .ion-social-googleplus,
 .ion-social-instagram {
+    -webkit-transition: color 0.2s;
     transition: color 0.2s;
 }
-
-
 
 .ion-social-facebook:hover {
     color: #3b5998;
@@ -592,8 +647,35 @@ footer {
     color: #517fa4;
 }
 
+
 footer p {
     color: #888;
     text-align: center;
     margin-top: 20px;
+}
+
+
+
+
+/* ----------------------------------------------- */
+/* Animations */
+/* ----------------------------------------------- */
+
+.js--wp-1,
+.js--wp-2,
+.js--wp-3 {
+    opacity: 0;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.js--wp-4 {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.js--wp-1.animated,
+.js--wp-2.animated,
+.js--wp-3.animated {
+    opacity: 1;
 }
