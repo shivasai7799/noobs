@@ -1,502 +1,526 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Shivasai mechineni portfolio and personal website">
-        <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
-        <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
-        <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
-        <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
-        <link rel="stylesheet" type="text/css" href="resources/css/style.css">
-        <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
-        <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
-        <title>Shivasai Mechineni Portfolio</title>
-        <link rel="apple-touch-icon" sizes="57x57" href="/resources/favicons/apple-touch-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="/resources/favicons/apple-touch-icon-60x60.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="/resources/favicons/apple-touch-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="/resources/favicons/apple-touch-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="/resources/favicons/apple-touch-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="/resources/favicons/apple-touch-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="/resources/favicons/apple-touch-icon-144x144.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="/resources/favicons/apple-touch-icon-152x152.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="/resources/favicons/apple-touch-icon-180x180.png">
-        <link rel="icon" type="image/png" href="/resources/favicons/favicon-32x32.png" sizes="32x32">
-        <link rel="icon" type="image/png" href="/resources/favicons/favicon-194x194.png" sizes="194x194">
-        <link rel="icon" type="image/png" href="/resources/favicons/favicon-96x96.png" sizes="96x96">
-        <link rel="icon" type="image/png" href="/resources/favicons/android-chrome-192x192.png" sizes="192x192">
-        <link rel="icon" type="image/png" href="/resources/favicons/favicon-16x16.png" sizes="16x16">
-        <link rel="manifest" href="/resources/favicons/manifest.json">
-        <link rel="shortcut icon" href="/resources/favicons/favicon.ico">
-        <meta name="msapplication-TileColor" content="#da532c">
-        <meta name="msapplication-TileImage" content="/resources/favicons/mstile-144x144.png">
-        <meta name="msapplication-config" content="/resources/favicons/browserconfig.xml">
-        <meta name="theme-color" content="#ffffff">
-      </head>
 
-    <body>
-      <script>
-      var TxtType = function(el, toRotate, period) {
-      this.toRotate = toRotate;
-      this.el = el;
-      this.loopNum = 0;
-      this.period = parseInt(period, 10) || 2000;
-      this.txt = '';
-      this.tick();
-      this.isDeleting = false;
-  };
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shivasai mechineni portfolio and personal website">
+    <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
+    <title>Shivasai Mechineni Portfolio</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="/resources/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/resources/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/resources/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/resources/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/resources/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/resources/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/resources/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/resources/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/resources/favicons/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="/resources/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/resources/favicons/favicon-194x194.png" sizes="194x194">
+    <link rel="icon" type="image/png" href="/resources/favicons/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/resources/favicons/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/resources/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/resources/favicons/manifest.json">
+    <link rel="shortcut icon" href="/resources/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="/resources/favicons/mstile-144x144.png">
+    <meta name="msapplication-config" content="/resources/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+</head>
 
-  TxtType.prototype.tick = function() {
-      var i = this.loopNum % this.toRotate.length;
-      var fullTxt = this.toRotate[i];
+<body>
+    <script>
+        var TxtType = function (el, toRotate, period) {
+            this.toRotate = toRotate;
+            this.el = el;
+            this.loopNum = 0;
+            this.period = parseInt(period, 10) || 2000;
+            this.txt = '';
+            this.tick();
+            this.isDeleting = false;
+        };
 
-      if (this.isDeleting) {
-      this.txt = fullTxt.substring(0, this.txt.length - 1);
-      } else {
-      this.txt = fullTxt.substring(0, this.txt.length + 1);
-      }
+        TxtType.prototype.tick = function () {
+            var i = this.loopNum % this.toRotate.length;
+            var fullTxt = this.toRotate[i];
 
-      this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+            if (this.isDeleting) {
+                this.txt = fullTxt.substring(0, this.txt.length - 1);
+            } else {
+                this.txt = fullTxt.substring(0, this.txt.length + 1);
+            }
 
-      var that = this;
-      var delta = 200 - Math.random() * 100;
+            this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
 
-      if (this.isDeleting) { delta /= 2; }
+            var that = this;
+            var delta = 200 - Math.random() * 100;
 
-      if (!this.isDeleting && this.txt === fullTxt) {
-      delta = this.period;
-      this.isDeleting = true;
-      } else if (this.isDeleting && this.txt === '') {
-      this.isDeleting = false;
-      this.loopNum++;
-      delta = 500;
-      }
+            if (this.isDeleting) { delta /= 2; }
 
-      setTimeout(function() {
-      that.tick();
-      }, delta);
-  };
+            if (!this.isDeleting && this.txt === fullTxt) {
+                delta = this.period;
+                this.isDeleting = true;
+            } else if (this.isDeleting && this.txt === '') {
+                this.isDeleting = false;
+                this.loopNum++;
+                delta = 500;
+            }
 
-  window.onload = function() {
-      var elements = document.getElementsByClassName('typewrite');
-      for (var i=0; i<elements.length; i++) {
-          var toRotate = elements[i].getAttribute('data-type');
-          var period = elements[i].getAttribute('data-period');
-          if (toRotate) {
-            new TxtType(elements[i], JSON.parse(toRotate), period);
-          }
-      }
-      // INJECT CSS
-      var css = document.createElement("style");
-      css.type = "text/css";
-      css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
-      document.body.appendChild(css);
-  };
-      </script>
-        <header>
-            <nav>
-                <div class="row">
-                    <img src="resources/img/profile.jpeg" alt="Omnifood logo" class="logo">
-                    <!-- <img src="resources/img/logo.png" alt="Omnifood logo" class="logo-black"> -->
-                    <ul class="main-nav js--main-nav">
-                        <li><a href="#works">HOME</a></li>
-                        <li><a class="js--scroll-to-start" href="#">ABOUT</a></li>
-                        <li><a href="#cities">SKILLS</a></li>
-                        <li><a href="#plans">EXPERIENCE</a></li>
-                        <li><a class="js--scroll-to-plans" href="#">EDUCATION</a></li>
-                    </ul>
-                    <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
-                </div>
-            </nav>
-            <div class="hero-text-box">
-              <h1>HELLO, I'M </br> SHIVASAI MECHINENI</h1>
-              <p class="hero">FRONT-END DEVELOPER</p>
-                <!-- <a class="btn btn-full js--scroll-to-plans" href="#">I'm hungry</a>
-                <a class="btn btn-ghost js--scroll-to-start" href="#">Show me more</a> -->
-            </div>
+            setTimeout(function () {
+                that.tick();
+            }, delta);
+        };
 
-        </header>
-
-        <section class="section-features js--section-features" id="features">
+        window.onload = function () {
+            var elements = document.getElementsByClassName('typewrite');
+            for (var i = 0; i < elements.length; i++) {
+                var toRotate = elements[i].getAttribute('data-type');
+                var period = elements[i].getAttribute('data-period');
+                if (toRotate) {
+                    new TxtType(elements[i], JSON.parse(toRotate), period);
+                }
+            }
+            // INJECT CSS
+            var css = document.createElement("style");
+            css.type = "text/css";
+            css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+            document.body.appendChild(css);
+        };
+    </script>
+    <header class="section-home js--section-home" id="home">
+        <nav>
             <div class="row">
-                <h2>ABOUT</h2>
+                <a href="#features">
+                    <img src="resources/img/profile.jpeg" alt="logo" class="logo">
+                </a>
+                <!-- <a href="https://www.google.ru/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"><img src="https://www.google.ru/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"></a>   -->
+                <!-- <img src="resources/img/logo.png" alt="Omnifood logo" class="logo-black"> -->
+                <ul class="main-nav js--main-nav">
+                    <li>
+                        <a href="#home">HOME</a>
+                    </li>
+                    <li>
+                        <a href="#features">ABOUT</a>
+                    </li>
+                    <li>
+                        <a href="#works">SKILLS</a>
+                    </li>
+                    <li>
+                        <a href="#plans">EXPERIENCE</a>
+                    </li>
+                    <li>
+                        <a href="#education_details">EDUCATION</a>
+                    </li>
+                    <li>
+                        <a href="#contact">CONTACT</a>
+                    </li>
+                </ul>
+                <a class="mobile-nav-icon js--nav-icon">
+                    <i class="ion-navicon-round"></i>
+                </a>
             </div>
+        </nav>
+        <div class="hero-text-box">
+            <h1>HELLO, I'M </br> SHIVASAI MECHINENI</h1>
+            <p class="hero">FRONT-END DEVELOPER</p>
+        </div>
+    </header>
 
-            <div class="row js--wp-1">
-                <div class="col span-1-of-2 box">
-                  <h3 class="personal">Personal Details</h2>
-                  <p class="name">Name: Shivasai Mechineni</p>
-                  <p class="name">Email: Shivasairao210@gmail.com</p>
-                  <p class="name">Phone : +1(913)-689-9093</p>
-                  <p class="name">Date of Birth : 02 OCT</p>
-                  <p class="name">Address : 9239 Amberglen Blvd, Austin, Texas</p>
-                  <p class="name">Nationality : Indian</p>
+    <section class="section-features js--section-features" id="features">
+        <div class="row">
+            <h2>ABOUT</h2>
+        </div>
+        <div class="row js--wp-1">
+            <div class="col span-1-of-2 box">
+                <h3 class="personal">Personal Details</h2>
+                    <p class="name">Name: Shivasai Mechineni</p>
+                    <p class="name">Email: Shivasairao210@gmail.com</p>
+                    <p class="name">Phone : +1(913)-689-9093</p>
+                    <p class="name">Date of Birth : 02 OCT</p>
+                    <p class="name">Address : 9239 Amberglen Blvd, Austin, Texas</p>
+                    <p class="name">Nationality : Indian</p>
+            </div>
+            <div class="col span-1-of-2 box">
+                <h3 class="professional">PROFESSIONAL PROFILE</h3>
+                <p>
+                    Around 3 years of diversified experience in programming using latest web technologies.Highly devoloped analytical,technical
+                    and problem solving skills,excellent communication skills and motivated with the ability to work with
+                    in a competent team.
+                </p>
+                </br>
+                <div>
+                    <i class="ion-social-linkedin icon-small"></i>
+                    <a href="https://www.linkedin.com/in/shivasai-m-4a2940183/" target="_blank">Linkedin</a>
                 </div>
-                <div class="col span-1-of-2 box">
-                    <h3 class="professional">PROFESSIONAL PROFILE</h3>
-                    <p>
-                        Around 3 years of diversified experience in programming using latest web technologies.Highly devoloped analytical,technical and problem solving skills,excellent communication skills and motivated with the ability to work with in a competent team.
-                    </p>
-                   </br>
-                    <div>
-                        <i class="ion-social-linkedin icon-small"></i>
-                        <a href="https://www.linkedin.com/in/shivasai-m-4a2940183/" target="_blank">Linkedin</a>
-                    </div>
-                    </br>
-                    <div>
-                        <i class="ion-social-github icon-small"></i>
-                        <a href="https://www.linkedin.com/in/shivasai-m-4a2940183/" target="_blank">Github</a>
-                    </div>
-                    </br>
-                    <!-- <div class="typewriter">
+                </br>
+                <div>
+                    <i class="ion-social-github icon-small"></i>
+                    <a href="https://www.linkedin.com/in/shivasai-m-4a2940183/" target="_blank">Github</a>
+                </div>
+                </br>
+                <!-- <div class="typewriter">
                     <h3>Shivasai Mechineni</h3>
                   </div> -->
-                  <div>
-                  <h4>
-                  <a href="" class="typewrite" data-period="2000" data-type='["Shivasai Mechineni"]'>
-                 <span class="wrap"></span>
-                </a>
-              </h4>
-                 </div>
+                <div>
+                    <h4>
+                        <a href="" class="typewrite" data-period="2000" data-type='["Shivasai Mechineni"]'>
+                            <span class="wrap"></span>
+                        </a>
+                    </h4>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="section-meals">
-            <ul class="meals-showcase clearfix">
-                <li>
-                    <figure class="meal-photo">
-                        <img src="resources/img/1.jpg" alt="Korean bibimbap with egg and vegetables">
-                    </figure>
-                </li>
-                <li>
-                    <figure class="meal-photo">
-                        <img src="resources/img/2.jpg" alt="Simple italian pizza with cherry tomatoes">
-                    </figure>
-                </li>
-                <li>
-                    <figure class="meal-photo">
-                        <img src="resources/img/3.jpg" alt="Chicken breast steak with vegetables">
-                    </figure>
-                </li>
-                <li>
-                    <figure class="meal-photo">
-                        <img src="resources/img/4.jpg" alt="Autumn pumpkin soup">
-                    </figure>
-                </li>
-            </ul>
-            <ul class="meals-showcase clearfix">
-                <li>
-                    <figure class="meal-photo">
-                        <img src="resources/img/5.jpg" alt="Paleo beef steak with vegetables">
-                    </figure>
-                </li>
-                <li>
-                    <figure class="meal-photo">
-                        <img src="resources/img/6.jpg" alt="Healthy baguette with egg and vegetables">
-                    </figure>
-                </li>
-                <li>
-                    <figure class="meal-photo">
-                        <img src="resources/img/7.jpg" alt="Burger with cheddar and bacon">
-                    </figure>
-                </li>
-                <li>
-                    <figure class="meal-photo">
-                        <img src="resources/img/8.jpg" alt="Granola with cherries and strawberries">
-                    </figure>
-                </li>
-            </ul>
-        </section>
-
-
-        <section class="section-steps" id="works">
-            <div class="row">
-                <h2>How it works &mdash; Simple as 1, 2, 3</h2>
-            </div>
-            <div class="row">
-                <div class="col span-1-of-2 steps-box">
-                    <img src="resources/img/app-iPhone.png" alt="Omnifood app on iPhone" class="app-screen js--wp-2">
-                </div>
-                <div class="col span-1-of-2 steps-box">
-                    <div class="works-step clearfix">
-                        <div>1</div>
-                        <p>Choose the subscription plan that best fits your needs and sign up today.</p>
-                    </div>
-                    <div class="works-step clearfix">
-                        <div>2</div>
-                        <p>Order your delicious meal using our mobile app or website. Or you can even call us!</p>
-                    </div>
-                    <div class="works-step clearfix">
-                        <div>3</div>
-                        <p>Enjoy your meal after less than 20 minutes. See you the next time!</p>
-                    </div>
-
-                    <a href="#" class="btn-app"><img src="resources/img/download-app.svg" alt="App Store Button"></a>
-                    <a href="#" class="btn-app"><img src="resources/img/download-app-android.png" alt="Play Store Button"></a>
-                </div>
-            </div>
-        </section>
-
-        <section class="section-cities" id="cities">
-            <div class="row">
-                <h2>We're currently in these cities</h2>
-            </div>
-            <div class="row js--wp-3">
-                <div class="col span-1-of-4 box">
-                    <img src="resources/img/lisbon-3.jpg" alt="Lisbon">
-                    <h3>Lisbon</h3>
-                    <div class="city-feature">
-                        <i class="ion-ios-person icon-small"></i>
-                        1600+ happy eaters
-                    </div>
-                    <div class="city-feature">
-                        <i class="ion-ios-star icon-small"></i>
-                        60+ top chefs
-                    </div>
-                    <div class="city-feature">
-                        <i class="ion-social-twitter icon-small"></i>
-                        <a href="#">@omnifood_lx</a>
-                    </div>
-                </div>
-                <div class="col span-1-of-4 box">
-                    <img src="resources/img/san-francisco.jpg" alt="San Francisco">
-                    <h3>San Francisco</h3>
-                    <div class="city-feature">
-                        <i class="ion-ios-person icon-small"></i>
-                        3700+ happy eaters
-                    </div>
-                    <div class="city-feature">
-                        <i class="ion-ios-star icon-small"></i>
-                        160+ top chefs
-                    </div>
-                    <div class="city-feature">
-                        <i class="ion-social-twitter icon-small"></i>
-                        <a href="#">@omnifood_sf</a>
-                    </div>
-                </div>
-                <div class="col span-1-of-4 box">
-                    <img src="resources/img/berlin.jpg" alt="Berlin">
-                    <h3>Berlin</h3>
-                    <div class="city-feature">
-                        <i class="ion-ios-person icon-small"></i>
-                        2300+ happy eaters
-                    </div>
-                    <div class="city-feature">
-                        <i class="ion-ios-star icon-small"></i>
-                        110+ top chefs
-                    </div>
-                    <div class="city-feature">
-                        <i class="ion-social-twitter icon-small"></i>
-                        <a href="#">@omnifood_berlin</a>
-                    </div>
-                </div>
-                <div class="col span-1-of-4 box">
-                    <img src="resources/img/london.jpg" alt="London">
-                    <h3>London</h3>
-                    <div class="city-feature">
-                        <i class="ion-ios-person icon-small"></i>
-                        1200+ happy eaters
-                    </div>
-                    <div class="city-feature">
-                        <i class="ion-ios-star icon-small"></i>
-                        50+ top chefs
-                    </div>
-                    <div class="city-feature">
-                        <i class="ion-social-twitter icon-small"></i>
-                        <a href="#">@omnifood_london</a>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-
-        <section class="section-testimonials">
-            <div class="row">
-                <h2>Our customers can't live without us</h2>
-            </div>
-            <div class="row">
-                <div class="col span-1-of-3">
-                    <blockquote>
-                        Omnifood is just awesome! I just launched a startup which leaves me with no time for cooking, so Omnifood is a life-saver. Now that I got used to it, I couldn't live without my daily meals!
-                        <cite><img src="resources/img/customer-1.jpg" alt="Customer 1 photo">Alberto Duncan</cite>
-                    </blockquote>
-                </div>
-                <div class="col span-1-of-3">
-                    <blockquote>
-                       Inexpensive, healthy and great-tasting meals, delivered right to my home. We have lots of food delivery here in Lisbon, but no one comes even close to Omifood. Me and my family are so in love!
-                        <cite><img src="resources/img/customer-2.jpg" alt="Customer 2 photo">Joana Silva</cite>
-                    </blockquote>
-                </div>
-                <div class="col span-1-of-3">
-                    <blockquote>
-I was looking for a quick and easy food delivery service in San Franciso. I tried a lot of them and ended up with Omnifood. Best food delivery service in the Bay Area. Keep up the great work!
-                    <cite><img src="resources/img/customer-3.jpg" alt="Customer 3 photo">Milton Chapman</cite>
-                    </blockquote>
-                </div>
-            </div>
-        </section>
-
-
-        <section class="section-plans js--section-plans" id="plans">
-            <div class="row">
-                <h2>Start eating healthy today</h2>
-            </div>
-            <div class="row">
-                <div class="col span-1-of-3">
-                    <div class="plan-box js--wp-4">
-                        <div>
-                            <h3>Premium</h3>
-                            <p class="plan-price">$399 <span>/ month</span></p>
-                            <p class="plan-price-meal">That's only 13.30$ per meal</p>
-                        </div>
-                        <div>
-                            <ul>
-                                <li><i class="ion-ios-checkmark-empty icon-small"></i>1 meal every day</li>
-                                <li><i class="ion-ios-checkmark-empty icon-small"></i>Order 24/7</li>
-                                <li><i class="ion-ios-checkmark-empty icon-small"></i>Access to newest creations</li>
-                                <li><i class="ion-ios-checkmark-empty icon-small"></i>Free delivery</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <a href="#" class="btn btn-full">Sign up now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col span-1-of-3">
-                    <div class="plan-box">
-                        <div>
-                            <h3>Pro</h3>
-                            <p class="plan-price">$149 <span>/ month</span></p>
-                            <p class="plan-price-meal">That's only 14.90$ per meal</p>
-                        </div>
-                        <div>
-                            <ul>
-                                <li><i class="ion-ios-checkmark-empty icon-small"></i>1 meal 10 days/month</li>
-                                <li><i class="ion-ios-checkmark-empty icon-small"></i>Order 24/7</li>
-                                <li><i class="ion-ios-checkmark-empty icon-small"></i>Access to newest creations</li>
-                                <li><i class="ion-ios-checkmark-empty icon-small"></i>Free delivery</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <a href="#" class="btn btn-ghost">Sign up now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col span-1-of-3">
-                    <div class="plan-box">
-                        <div>
-                            <h3>Starter</h3>
-                            <p class="plan-price">19$ <span>/ meal</span></p>
-                            <p class="plan-price-meal">&nbsp;</p>
-                        </div>
-                        <div>
-                            <ul>
-                                <li><i class="ion-ios-checkmark-empty icon-small"></i>1 meal</li>
-                                <li><i class="ion-ios-checkmark-empty icon-small"></i>Order from 8 am to 12 pm</li>
-                                <li><i class="ion-ios-close-empty icon-small"></i></li>
-                                <li><i class="ion-ios-checkmark-empty icon-small"></i>Free delivery</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <a href="#" class="btn btn-ghost">Sign up now</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section-form">
-            <div class="row">
-                <h2>We're happy to hear from you</h2>
-            </div>
-            <div class="row">
-                <form method="post" action="#" class="contact-form">
-                    <div class="row">
-                        <div class="col span-1-of-3">
-                            <label for="name">Name</label>
-                        </div>
-                        <div class="col span-2-of-3">
-                            <input type="text" name="name" id="name" placeholder="Your name" required>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col span-1-of-3">
-                            <label for="email">Email</label>
-                        </div>
-                        <div class="col span-2-of-3">
-                            <input type="email" name="email" id="email" placeholder="Your email" required>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col span-1-of-3">
-                            <label for="find-us">How did you find us?</label>
-                        </div>
-                        <div class="col span-2-of-3">
-                            <select name="find-us" id="find-us">
-                                <option value="friends" selected>Friends</option>
-                                <option value="search">Search engine</option>
-                                <option value="ad">Advertisement</option>
-                                <option value="other">Other</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col span-1-of-3">
-                            <label>Newsletter?</label>
-                        </div>
-                        <div class="col span-2-of-3">
-                            <input type="checkbox" name="news" id="news" checked> Yes, please
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col span-1-of-3">
-                            <label>Drop us a line</label>
-                        </div>
-                        <div class="col span-2-of-3">
-                            <textarea name="message" placeholder="Your message"></textarea>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col span-1-of-3">
-                            <label>&nbsp;</label>
-                        </div>
-                        <div class="col span-2-of-3">
-                            <input type="submit" value="Send it!">
-                        </div>
-                    </div>
-
-                </form>
-
-            </div>
-        </section>
-
-        <footer>
-            <div class="row">
-                <div class="col span-1-of-2">
-                    <ul class="footer-nav">
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Press</a></li>
-                        <li><a href="#">iOS App</a></li>
-                        <li><a href="#">Android App</a></li>
-                    </ul>
-                </div>
-                <div class="col span-1-of-2">
-                    <ul class="social-links">
-                        <li><a href="#"><i class="ion-social-facebook"></i></a></li>
-                        <li><a href="#"><i class="ion-social-twitter"></i></a></li>
-                        <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
-                        <li><a href="#"><i class="ion-social-instagram"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row">
-                <p>
-                    Copyright &copy; 2015 by Omnifood. All rights reserved.
+    <section class="section-steps" id="works">
+        <div class="row">
+            <h2>SKILLS</h2>
+        </div>
+        <div class="row">
+            <div>
+                <p class="skillset">
+                    Software Developer with Around 3 Year track-record of commended performance in modular,web technologies and Object-Oriented
+                    Programming.Well-versed in all phases of Software Devolopemnt cycles with a strong working knowledge
+                    on Algorithms and Data Structures.Proven success Engineering and Customized solutions improving Bussiness
+                    process,operations and profitability.
                 </p>
             </div>
-        </footer>
+            <div class="flex-wrapper">
+                <div class="single-chart">
+                    <svg viewBox="0 0 36 36" class="circular-chart orange">
+                        <path class="circle-bg" d="M18 2.0845
+              a 15.9155 15.9155 0 0 1 0 31.831
+             a 15.9155 15.9155 0 0 1 0 -31.831" />
+                        <path class="circle" stroke-dasharray="80, 100" d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831" />
+                        <text x="18" y="20.35" class="percentage">80</text>
+                    </svg>
+                    </br>
+                    <h4 class="skills-text">HTML5,CSS3,Bootstrap</h4>
+                </div>
+
+                <div class="single-chart">
+                    <svg viewBox="0 0 36 36" class="circular-chart green">
+                        <path class="circle-bg" d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831" />
+                        <path class="circle" stroke-dasharray="70, 100" d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831" />
+                        <text x="18" y="20.35" class="percentage">70%</text>
+                    </svg>
+                    </br>
+                    <h4 class="skills-text">Jquery,Ajax</h4>
+                </div>
+
+
+                <div class="single-chart">
+                    <svg viewBox="0 0 36 36" class="circular-chart blue">
+                        <path class="circle-bg" d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831" />
+                        <path class="circle" stroke-dasharray="75, 100" d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831" />
+                        <text x="18" y="20.35" class="percentage">75%</text>
+                    </svg>
+                    </br>
+                    <h4 class="skills-text">Javascript,Typescript &mdash; (Angular)</h4>
+                </div>
+                <div class="single-chart">
+                    <svg viewBox="0 0 36 36" class="circular-chart brown">
+                        <path class="circle-bg" d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831" />
+                        <path class="circle" stroke-dasharray="30, 100" d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831" />
+                        <text x="18" y="20.35" class="percentage">30%</text>
+                    </svg>
+                    </br>
+                    <h4 class="skills-text">PL/SQL</h4>
+                </div>
+                <div class="single-chart">
+                    <svg viewBox="0 0 36 36" class="circular-chart purple">
+                        <path class="circle-bg" d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831" />
+                        <path class="circle" stroke-dasharray="60, 100" d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831" />
+                        <text x="18" y="20.35" class="percentage">60%</text>
+                    </svg>
+                    </br>
+                    <h4 class="skills-text">CI/CD(Deployments)</h4>
+                </div>
+            </div>
+            <div class='parent flex-parent'>
+                <div class='child flex-child'>
+                    <div>
+                        <h3>
+                            </b>Knowledge</b>:</h3>
+                    </div>
+                    <div>
+                        <ul style="list-style:none;">
+                            <li>
+                                <i class="ion-ios-checkmark-empty icon-small"></i>HTML5</li>
+                            <li>
+                                <i class="ion-ios-checkmark-empty icon-small"></i>CSS3</li>
+                            <li>
+                                <i class="ion-ios-checkmark-empty icon-small"></i>Bootstrap</li>
+                            <li>
+                                <i class="ion-ios-checkmark-empty icon-small"></i>Jquery</li>
+                            <li>
+                                <i class="ion-ios-checkmark-empty icon-small"></i>Ajax</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class='child flex-child'>
+                    </br>
+                    </br>
+                    <div>
+                        <ul style="list-style:none;">
+                            <li>
+                                <i class="ion-ios-checkmark-empty icon-small"></i>Javascript</li>
+                            <li>
+                                <i class="ion-ios-checkmark-empty icon-small"></i>AngularJS</li>
+                            <li>
+                                <i class="ion-ios-checkmark-empty icon-small"></i>Typescript</li>
+                            <li>
+                                <i class="ion-ios-checkmark-empty icon-small"></i>Angular4/6</li>
+                            <li>
+                                <i class="ion-ios-checkmark-empty icon-small"></i>OfficeJS</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class='child flex-child'>
+                    </br>
+                    </br>
+                    <div>
+                        <ul style="list-style:none;">
+                            <li>
+                                <i class="ion-ios-checkmark-empty icon-small"></i>PL/SQL</li>
+                            <li>
+                                <i class="ion-ios-checkmark-empty icon-small"></i>CI/CD(Linux)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class='parent flex-parent none'>
+            <div class='child flex-child none'>
+                <div>
+                    <h3>
+                        </b>Language Skills:</b>:</h3>
+                </div>
+                <p>ENGLISH</p>
+                <div class="container">
+                    <div class="skills eng">99%</div>
+                </div>
+
+                <p>TELUGU</p>
+                <div class="container">
+                    <div class="skills tel">85%</div>
+                </div>
+
+                <p>HINDI</p>
+                <div class="container">
+                    <div class="skills hin">80%</div>
+                </div>
+                <div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-cities" id="cities">
+        <div class="row">
+            <h2>Work Experience</h2>
+        </div>
+        <div class="row js--wp-3">
+            <div class="city-feature">
+                <i class="ion-ios-person icon-exp"></i>
+            </div>
+            <div>
+                <h4 class="role">Web Developer
+                    <h4>
+                        <h3 class="work-exp">UURMI SYSTEMS</p>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="section-testimonials" id="education_details">
+        <div style="color:#fff">
+            <h2>EDUCATION:</h2>
+        </div>
+        <div class="row">
+            <p class="edu">
+                <b>Education Details</b>:</p>
+            <p class="education">The combination of my education and relevant experience offer me the unique oppurtunity to make a positive contribution
+                as a
+                <b>Software Developer</b>.It involved a great deal of independent research, requiring initiative,self-motivation
+                and a wide range of skills</p>
+
+            <div class='parent flex-parent' style="margin-top:30px; padding-bottom:40px; width: 100%;border-bottom: 1px solid grey;">
+                <div class='child flex-child'>
+                    <div class="img-anime">
+                      <img src="resources/img/laptop-code-solid.svg" alt="mail" style="height:65px; width:65px; margin-top:40px; padding-top:-15px;">
+                    </div>
+                    <div style='margin-left:80px; margin-top:-75px; color:#000;'>
+                        <h5>UCMO,USA</h5>
+                        <div style="font-size:1em">MASTERS IN CS</div>
+                        <p style="font-size: 0.7em"> GPA 3.3/4.0</p>
+                        <p style="font-size:0.7em"> Jan 2016 &mdash; May 2017 </p>
+                    </div>
+                </div>
+                <div class='child flex-child'>
+                    <p style="color:#000; text-align:center;">Studying A Masters Degree in Computer Science is always a good option to earn fresh, advanced knowledge
+                        and gain confidence within the area of expertise.</br>Related Course&mdash;work: Advance algorithms
+                        and data structures,Advanced database systems, Advanced Operating systems.
+                </div>
+            </div>
+
+            <div class='parent flex-parent'>
+                <div class='child flex-child'>
+                    <div>
+                        <img src="resources/img/university-solid.svg" alt="mail" style="height:65px; width:65px; margin-top:40px; padding-top:-15px;">
+                    </div>
+                    <div style='margin-left:80px; margin-top:-75px; color:#000;'>
+                        <h5>JNAFAU,HYDERABAD</h5>
+                        <div style="font-size:1em">BACHLOERS IN IT</div>
+                        <p style="font-size: 0.7em"> GPA 3.3/4.0</p>
+                        <p style="font-size:0.7em">Aug 2011 &mdash; june 2015</p>
+                    </div>
+                </div>
+                <div class='child flex-child'>
+                    <p style="color:#000; text-align:center; margin-top:30px;">Pursuing a Bachloers Degree in Information Technology is most important phase of my life which taught
+                        me how to code and Unleash latent skill&mdash;set with an allround personality devolopment.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section-plans js--section-plans" id="contact">
+        <div>
+            <h2>CONTACT</h2>
+        </div>
+      <div class='parent flex-parent'>
+        <div class='child flex-child effectless'>
+        <div class="row" style="margin-left: 100px;">
+               <div style="margin-top: -110px">
+                 <div>
+                     <img src="resources/img/location.svg" alt="mail" style="height:45px; width:45px; margin-top:100px; padding-top:10px;text-align:center">
+                 </div>
+                  <div style='margin-left:70px; margin-top:-46px; color:#000; width:200%'>
+                      <h5>Shivasai kumar Mechineni</h5>
+                      <p style="font-size: 0.9em">Amberglen Blvd, Austin, Texas</p>
+                      <p style="font-size:0.9em">USA</p>
+                  </div>
+                </div>
+                  <div style="margin-top:-40px;">
+                    <div>
+                        <img src="resources/img/phone-solid.svg" alt="mail" style="height:45px; width:45px; margin-top:120px; padding-top:10px;text-align:center">
+                    </div>
+                  <div style='margin-left:70px; margin-top:-46px; color:#000;'>
+                      <div style="font-size:1em">Phone</div>
+                      <p style="font-size: 0.9em">+1(913)-689-9093</p>
+                  </div>
+                  </div>
+                  <div style="margin-top:-40px;">
+                  <!-- <div>
+                      <i class="ion-ios-person icon-big-1"></i>
+                  </div> -->
+                  <div>
+                      <img src="resources/img/mail.svg" alt="mail" style="height:45px; width:45px; margin-top:120px; padding-top:10px;text-align:center">
+                  </div>
+                  <div style='margin-left:70px; margin-top:-46px; color:#000;'>
+                      <div style="font-size:1em">Email</div>
+                      <p style="font-size: 0.9em">Shivasairao210@gmail.com</p>
+                  </div>
+                  </div>
+              </div>
+            </div>
+            <div class='child flex-childs'>
+              <div>
+              <p style="text-align:center; margin-top:100px; margin-left:-100px;"><b>I'M ALSO ON SOCIAL NETWORKS</b></p>
+              <p style="font-size:0.7em;text-align:center; margin-left:-100px; margin-top:20px;">Looking forward to have requests in below networks</p>
+              </div>
+              <div>
+                <ul class="social-links" style="margin-right:200px; margin-top:-110px; margin-left:-40px;">
+                        <li><a href="https://mail.google.com/mail/" target="_blank"><img src="resources/img/mail.svg" alt="mail" style="height:40px; width:40px; margin-top:50px; margin-bottom:4px; padding-top:10px;"></a></li>
+                        <li><a href="https://www.youtube.com/channel/UCvkqyuwYjfgObgE9pwDAXBg?view_as=subscriber" target="_blank"><img src="resources/img/youtube-brands.svg" alt="mail" style="height:45px; width:45px; margin-top:120px; padding-top:10px;text-align:center"></a></li>
+                        <li><a href="https://aboutme.google.com/u/1/?referer=gplus&pageId=none" target="_blank"><img src="resources/img/googleplus.svg" alt="mail" style="height:45px; width:45px; margin-top:120px; padding-top:10px;text-align:center"></a></li>
+                  </ul>
+              </div>
+              </div>
+            </div>
+        </div>
+         </section>
+
+        <section class="section-form">
+        <div class="row" style="margin-top:-100px;">
+            <h4 style="text-align:center;">DROP ME A LINE</h4>
+          </br>
+        </br>
+        </div>
+        <div class="row">
+            <form method="post" action="#" class="contact-form">
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label for="name">Name</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <input type="text" name="name" id="name" placeholder="Your name" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <input type="email" name="email" id="email" placeholder="Your email" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label>Drop me a line</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <textarea name="message" placeholder="Your message"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label>&nbsp;</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <input type="submit" value="Send it!">
+                    </div>
+                </div>
+
+            </form>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="row">
+            <p>
+                Copyright &copy;Shivasai Mechineni. All rights reserved.
+            </p>
+        </div>
+    </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -507,16 +531,18 @@ I was looking for a quick and easy food delivery service in San Franciso. I trie
     <script src="resources/js/script.js"></script>
 
     <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-      ga('create', 'UA-61026110-2', 'auto');
-      ga('send', 'pageview');
+        ga('create', 'UA-61026110-2', 'auto');
+        ga('send', 'pageview');
 
     </script>
 
-    </body>
+</body>
 
 </html>

@@ -22,6 +22,10 @@ $(document).ready(function() {
        $('html, body').animate({scrollTop: $('.js--section-features').offset().top}, 1000);
     });
 
+    $('#home').click(function () {
+       $('html, body').animate({scrollTop: $('.js--section-home').offset().top}, 1000);
+    });
+
 
     /* Navigation scroll */
     $(function() {
