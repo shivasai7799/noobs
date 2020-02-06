@@ -1,5 +1,7 @@
-/// <reference path ='base-components.ts' />
-namespace App {
+    import { Component } from './base-components.js';
+    import { Validatable , validate } from '../util/validation.js';
+    import { autobind } from '../decorators/autobind.js';
+    import { projectState } from '../state/project-state.js';
     //Project Input 
     export class projectInput extends Component<HTMLDivElement, HTMLFormElement> {
         titleElement: HTMLInputElement;
@@ -82,4 +84,3 @@ namespace App {
             }
         }
     }
-}

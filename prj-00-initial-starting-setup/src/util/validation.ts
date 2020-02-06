@@ -1,4 +1,4 @@
- namespace App {
+ 
   //Validation
  export interface Validatable {
     required?: boolean;
@@ -28,6 +28,6 @@ export function validate(validatableInput: Validatable) {
     }
     return isValid;
 }
- }
+
  
  
