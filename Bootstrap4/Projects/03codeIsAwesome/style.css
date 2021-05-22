@@ -1,0 +1,36 @@
+body {
+  background: url(background.jpg) no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Abril Fatface', cursive;
+}
+
+.hero {
+
+ color:#000;
+ margin-top: 20px;
+ font-size: 2.5em;
+}
+
+.rowHeight{
+  height : 500px;
+}
+
+.bg {
+background-color: #c1c1c1;
+opacity:0.8;
+}
+
+.img {
+ height : 200px;
+}
+
+.footer{
+  background-color: #fff;
+  position: fixed;
+  bottom: 0;
+}
+
+p {
+font-size: 18px;
+padding: 20px;
+}

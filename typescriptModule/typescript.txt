@@ -1,0 +1,48 @@
+types:
+in typescript the type can be explicit whereas in javascript it nedd not to be 
+
+
+types in typescrippt 
+Strings
+//let myName = 'shiva';
+if we assign a string to a variable.typescripts keep in mind that the variable is string and we cannnot reassign the variable to other types.
+ in Javscript we can be able to reassign the variable to different types  to a variable because javascript is a dynamic typed language where as typescript is kind of static type.
+ 
+ //Number 
+let myNum = 29;
+typescript care only about the types.it actually doesnt care about what kind of number is it.it can be of any type of number like floting,decimal etc..
+
+Assigning types Explicitly:
+let myName;
+if we dont assign any values to the variable.typescript treats that has any. and we can reassign the values as any kind of types
+let myRealAge;
+myRealAge =27;
+myRealAge = 'SHIVA';
+in this case we are now into real world javascript 
+we can explicitly declare a type while we initialize;
+
+let myRealAge : any ;
+let myRealAge : Number ;
+
+
+//Arrays
+let shiva = ["shivasai","kumar"]; ---> now it treats as Strings[];
+shiva = [23 ,43]; this is not acceptable because it treats as numbers[];
+
+we can achieve in typescript by let shiva : any[]; -->this will allow all the array types..
+
+
+Tuples: its a new type features in typescript which is not avail in javascript.
+tuples are basically arrays and mixed types and limited number of values.
+let address : [string , number] = ["shiva", 99]; --- > order is important
+
+Static properties and methods
+
+class Helper {
+static PI : number = 3.14  ---> static keywords helps to use the property outside the class without instantiating the class. 
+}
+
+
+//Abstract classes 
+classes which are associated with the abstract which cannot be instantiated directly it can only be inherited and abstract methods doesnot not have function body.. it will only have the function decalration and return value;
+
