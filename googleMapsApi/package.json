@@ -23,7 +23,7 @@
   "dependencies": {
     "@types/googlemaps": "^3.39.2",
     "axiom": "^0.1.6",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "dev-server": "^0.1.0"
   }
 }
